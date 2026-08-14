@@ -45,7 +45,3 @@ digital-clock/
 - LinkedIn: https://www.linkedin.com/in/pratham-patil-3a8ba9282/
 
 ⭐ If you like this project, don't forget to star the repository!
-
-## 🌐 Deployment
-
-This project is deployed using GitHub Pages.
