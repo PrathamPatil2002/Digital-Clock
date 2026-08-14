@@ -6,7 +6,7 @@ A modern and responsive digital clock built using HTML, CSS and JavaScript.
 
 ## 🚀 Live Demo
 
-https://PrathamPatil2002.github.io/digital-clock/
+https://prathampatil2002.github.io/Digital-Clock/
 
 ## ✨ Features
 
