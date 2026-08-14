@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Digital Clock</h1>
+
+        <div class="clock-card">
+
+            <div class="time-row">
+
+                <div class="main-time">
+                    <span id="hours">04</span>
+                    <span class="colon">:</span>
+                    <span id="minutes">08</span>
+                </div>
+
+                <div class="ampm" id="ampm">PM</div>
+
+                <div class="seconds" id="seconds">05</div>
+
+            </div>
+
+            <div class="date" id="date">
+                Friday, 14 August
+            </div>
+
+        </div>
+
+        <div class="format-control">
+
+            <span>12-hour</span>
+
+            <label class="switch">
+                <input type="checkbox" id="formatSwitch">
+                <span class="slider"></span>
+            </label>
+
+            <span>24-hour</span>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

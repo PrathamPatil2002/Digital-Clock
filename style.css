@@ -1,0 +1,144 @@
+*{box-sizing:border-box;margin:0;padding:0}
+
+body{
+    min-height:100vh;
+    background:#000;
+    color:#fff;
+    font-family:Arial,sans-serif;
+    display:flex;
+    justify-content:center;
+    align-items:center
+}
+
+.container{
+    width:100%;
+    max-width:900px;
+    text-align:center;
+    padding:30px 20px
+}
+
+h1{
+    font-size:70px;
+    font-weight:800;
+    margin-bottom:70px
+}
+
+.clock-card{
+    width:100%;
+    padding:55px 60px 40px;
+    background:#181818;
+    border:1px solid #333;
+    border-radius:22px;
+    box-shadow:0 20px 50px rgba(255,255,255,.04),
+               0 30px 70px rgba(0,0,0,.8)
+}
+
+.time-row{
+    display:flex;
+    align-items:flex-start;
+    justify-content:center
+}
+
+.main-time{
+    display:flex;
+    align-items:center
+}
+
+#hours,#minutes{
+    font-size:110px;
+    font-weight:800;
+    line-height:1;
+    background:linear-gradient(120deg,#4da3ff,#9d73d7,#f45f91);
+    -webkit-background-clip:text;
+    background-clip:text;
+    -webkit-text-fill-color:transparent
+}
+
+.colon{
+    font-size:100px;
+    font-weight:700;
+    line-height:1;
+    color:#777;
+    margin:0 8px
+}
+
+.ampm{
+    margin:7px 0 0 15px;
+    font-size:20px;
+    font-weight:700;
+    color:#ffd83d
+}
+
+.seconds{
+    margin:75px 0 0 40px;
+    font-size:28px;
+    color:#00d8c7
+}
+
+.date{
+    margin-top:35px;
+    font-size:25px;
+    color:#e35bea
+}
+
+.format-control{
+    margin-top:30px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+    color:#ddd
+}
+
+.switch{
+    position:relative;
+    width:62px;
+    height:32px
+}
+
+.switch input{display:none}
+
+.slider{
+    position:absolute;
+    inset:0;
+    background:#55566b;
+    border-radius:30px;
+    cursor:pointer
+}
+
+.slider:before{
+    content:"";
+    position:absolute;
+    width:24px;
+    height:24px;
+    left:4px;
+    top:4px;
+    background:#ff5c9c;
+    border-radius:50%;
+    transition:.3s
+}
+
+input:checked+.slider{background:#315b68}
+
+input:checked+.slider:before{
+    transform:translateX(30px);
+    background:#00e89a
+}
+
+@media(max-width:700px){
+    h1{font-size:50px;margin-bottom:40px}
+    .clock-card{padding:40px 20px 30px}
+    #hours,#minutes{font-size:65px}
+    .colon{font-size:60px;margin:0 4px}
+    .seconds{margin:45px 0 0 20px;font-size:20px}
+    .date{font-size:18px;margin-top:25px}
+}
+
+@media(max-width:450px){
+    h1{font-size:40px}
+    .clock-card{padding:35px 10px 25px}
+    #hours,#minutes{font-size:48px}
+    .colon{font-size:45px}
+    .seconds{margin-left:10px;font-size:16px}
+    .ampm{font-size:12px}
+}
